@@ -1,0 +1,359 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    {{name}}
+{% endblock %}
+
+{% block content %}
+
+
+
+
+
+<!-- Navbar -->
+{% include 'partials/_header.html' %}
+<!-- End of Navbar -->
+
+<!-- Services -->
+<div>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center pt-5" > Services </h2>
+                <hr>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-item-stretch mb-5 mb-lg-0">
+                    <div class="des-box">
+                        <div class="icon">
+                            <i class="fa fa-cubes"></i>
+
+                        </div>
+                        <h4 class="title">
+                            <a href="">Lorem, ipsum.</a>
+                        </h4>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa ducimus corporis!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-item-stretch mb-5 mb-lg-0">
+                    <div class="des-box">
+                        <div class="icon">
+                            <i class="fa fa-edit"></i>
+
+                        </div>
+                        <h4 class="title">
+                            <a href="">Lorem, ipsum.</a>
+                        </h4>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa ducimus corporis!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-item-stretch mb-5 mb-lg-0">
+                    <div class="des-box">
+                        <div class="icon">
+                            <i class="fa fa-th"></i>
+
+                        </div>
+                        <h4 class="title">
+                            <a href="">Lorem, ipsum.</a>
+                        </h4>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa ducimus corporis!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex align-item-stretch mb-5 mb-lg-0">
+                    <div class="des-box">
+                        <div class="icon">
+                            <i class="fa fa-home"></i>
+
+                        </div>
+                        <h4 class="title">
+                            <a href="">Lorem, ipsum.</a>
+                        </h4>
+
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa ducimus corporis!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="services" class="services mb-5">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="text-center pt-5" > Our core Values </h2>
+            <hr>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-lg-4 d-flex align-item-stretch mb-5 mb-lg-0">
+                <div class="des-box">
+                    <div class="icon">
+                        <i class="fa fa-angle-double-up"></i>
+
+                    </div>
+                    <h4 class="title">
+                        <a href="">Quality</a>
+                    </h4>
+
+                    <p class="description">
+                        Delivering a product of the highest quality with no faults or comebacks
+                        </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex align-item-stretch mb-5 mb-lg-0">
+                <div class="des-box">
+                    <div class="icon">
+                        <i class="fa fa-tags"></i>
+
+                    </div>
+                    <h4 class="title">
+                        <a href="">Price</a>
+                    </h4>
+
+                    <p class="description">
+                  Delivering a product of the highest quality at the best possible price ensuring value for money.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 d-flex align-item-stretch mb-5 mb-lg-0">
+                <div class="des-box">
+                    <div class="icon">
+                        <i class="fa fa-truck"></i>
+
+                    </div>
+                    <h4 class="title">
+                        <a href="">Delivery</a>
+                    </h4>
+
+                    <p class="description">
+                        Delivering a product of the highest quality in the shortest possible time.
+                        </p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+</section>
+   
+<!-- End of services -->
+
+
+
+
+
+<!-- Gallery Section -->
+    <section class="py-5">
+        <div class="container-fluid">
+            <div class="row text-dark text-center">
+                <div class="col m-4">
+                    <h1 class="display-4 mb-4">
+                        Our Gallery
+                    </h1>
+                    <hr>
+                </div>
+            </div>
+            <ul class="list-inline text-center text-uppercase">
+                <li class="list-inline-item work-list-item active-item" data-filter="all">
+                    <span class="mx-3">All</span>
+                </li>
+                <li class="list-inline-item work-list-item" data-filter="electrical">
+                    <span class="mx-3">Electrical</span>
+                </li>
+
+                <li class="list-inline-item work-list-item" data-filter="mechanical">
+                    <span class="mx-3">Mechanical</span>
+                </li>
+
+        
+            </ul>
+            <div class="container-fluid">
+                <div class="d-flex flex-wrap justify-content-center">
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211118_131705.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="{% static 'images/IMG-20200712-WA0020.jpg' %}" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211119_101447.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="{% static 'images/IMG-20200712-WA0023.jpg' %}" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211119_144311.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/5726708/pexels-photo-5726708.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211122_101331.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/4577448/pexels-photo-4577448.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211125_115056.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/3964748/pexels-photo-3964748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211125_115154.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/586077/pexels-photo-586077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211125_114943.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/586024/pexels-photo-586024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300" height="300">
+                    </div>
+                   
+                    <div class="filter electrical">
+                        <img src="{% static 'images/IMG_20211125_115528.jpg' %}" width="300" height="300">
+
+                    </div>
+
+                    <div class="filter mechanical"> 
+                        <img src="https://images.pexels.com/photos/3912992/pexels-photo-3912992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="300" height="300">
+                    </div>
+                   
+                    
+                </div>
+                <div class="d-flex flex-wrap justify-content-center">
+
+                <a href="{% url 'appointments:Gallery' %}" class="mt-5 btn btn-primary justify-content-center">See All</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End of Gallery section -->
+
+
+<!-- Our Team Section -->
+    <section class="team section-bg mt-5">
+        
+        <div class="container">
+            <div class="section-title">
+                <h2 class="text-center py-3">Our Members</h2>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 d-flex-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="{% static 'images/Tirelo.jpg' %}" height="100"  class="img-fluid">
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Mr SF Mmela</h4>
+                            <span>Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 d-flex-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Emerson Royal</h4>
+                            <span>Executive Manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 d-flex-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="https://images.pexels.com/photos/4559593/pexels-photo-4559593.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Dohn Doe</h4>
+                            <span>CEO</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="col-lg-3 col-md-6 d-flex-items-stretch">
+                    <div class="member">
+                        <div class="member-img">
+                            <img src="https://images.pexels.com/photos/3768911/pexels-photo-3768911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>Michael Berra</h4>
+                            <span>Ecexutive assistance manager</span>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+<!-- End of our Team Section -->
+
+
+
+{% include 'partials/_footer.html' %}
+{% endblock %} 

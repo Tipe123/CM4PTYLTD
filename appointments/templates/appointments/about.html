@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block links %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block title %}
+    {{name}}
+{% endblock %}
+
+{% block content %}
+  <!-- Navbar -->
+  {% include 'partials/_header.html' %}
+  <!-- End of Navbar -->
+
+<div class="about-body mt-5">
+   <div class="about-section mt-5">
+      <div class="inner-container">
+         <h1>
+            About Us
+            <div class="boader"></div>
+         </h1>
+         <p class="text">
+            CM4 PTY LTD is a small interpreneural business with strong ambitions to become a leading service organisation in South Africa. We are a small team of highly skilled and experienced professionals who are dedicated to providing the best possible service to our clients.
+            We also employ highly skilled experts with a collective 20 years of experience in the field of Electrical and Mechanical Engineering.
+            Our services are not limited to any specific original equipment manufacturer (OEM) , But Cover a wide  </p>
+          
+         </p>
+         <div class="button"></div>
+      </div>
+   </div>
+</div>
+<section class="mt-5 container">
+   <div class="section-container">
+      <div class="columns image" style="background-image:url('https://cdn.pixabay.com/photo/2020/01/09/01/00/eyes-4751572_960_720.png')">
+         &nbsp;
+      </div>
+      <div class="columns content">
+         <div class="content-container">
+            <h1>Mission</h1>
+            <div class="boader mb-3"></div>
+            <p>
+               Our mission is to provide quality services and skilled people to delight our customers and provide the most effective world class services for our clients through supply and maintenance.
+             </p>
+             </div>
+      </div>
+   </div>
+
+   <div class="section-container mt-5 mb-4">
+      
+      <div class="columns content">
+         <div class="content-container">
+            <h1>Our Vision</h1>
+            <div class="boader mb-3"></div>
+            <p>
+               We exist to improve the productivity of our customers and to provide the best possible service to our clients by supplying competetive original and genuine <b><i>electrical</i></b> parts and services that help our customers to maximize the performance of their electrical and engineering asset investments .
+            </p>
+          </div>
+      </div>
+      <div class="columns image" style="background-image:url('https://cdn.pixabay.com/photo/2014/11/17/03/15/business-idea-534228_960_720.jpg')">
+         &nbsp;
+      </div>
+   </div>
+</section>
+
+{% include 'partials/_footer.html' %}
+{% endblock %}
